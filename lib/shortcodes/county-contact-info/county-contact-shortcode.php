@@ -111,7 +111,7 @@ class County_Contact_Shortcode {
 
 			if ( ! empty( $atts['show_map'] ) ) {
 
-				wp_enqueue_script( 'google_maps_api', '//maps.googleapis.com/maps/api/js', array(), false, true );
+				wp_enqueue_script( 'google_maps_api', '//maps.googleapis.com/maps/api/js?key=AIzaSyCcTd3MjJf_pv1xZs2KbP2HO8b6K8cQsAg', array(), false, true );
 
 				wp_enqueue_script( 'google-map-embed', ecore_get_plugin_url( 'lib/js/google-map-embed.js' ), array( 'google_maps_api' ), false, true );
 
